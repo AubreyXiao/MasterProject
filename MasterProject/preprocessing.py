@@ -8,13 +8,11 @@ from collections import Counter
 from nltk.corpus import stopwords
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.text import text_to_word_sequence
+from nltk.stem import SnowballStemmer
+from nltk.tokenize import word_tokenize
+import nltk.tokenize.punkt
 import re
-
-
-#load the file and clean them
-#convert to lowercase
-#Text has been split into one sentence per line.
-#There is white space around punctuation like periods, commas, and brackets.
+import regex
 
 
 #load the file and return the text
@@ -26,40 +24,84 @@ def load_file(filename):
     return text
 
 #clean the doc
+#remove: # tags, punctuations, not alphabate, stopwords, ,shortwords
+#?? stemming words , mutil words.
 def convert_text_to_tokens(text):
     #remove tags from the text
-    text = re.sub("<.*?>", "", text)
     print(text)
-    #filter the puntuactions
-    tokens = text_to_word_sequence(text, filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~\n', lower=True, split=' ')
-    #remove those are not alphabate
-    tokens = [word for word in tokens if word.isalpha()]
-    #filter out the stopwords
+    text = re.sub("<.*?>", "\n", text)
+    print("-2:remove the tags and split the sentences")
+    print(text)
+    tokens = text.split("\n")
+    print("-1:split the sentences into a list")
     print(tokens)
+    # #split the text into sentences
+    # tokenizer = nltk.tokenize.punkt.PunktSentenceTokenizer()
+    # tokens = tokenizer.tokenize(text)
+    # print("0:split the text into sentences:")
+    # print(tokens)
+    #convert to lowercase
+    tokens = [token.lower() for token in tokens]
+    print("2:lowercase:")
+    print(tokens)
+    #filter the puntuactions
+    #tokens = text_to_word_sequence(text, filters='!"#$%&()*+,-./:;<=>?@[\]^_`{|}~\n', lower=True, split=' ')
+    table = str.maketrans('','',string.punctuation)
+    tokens = [w.translate(table) for w in tokens if w!='']
+    print("3:remove punctuations")
+    print(tokens)
+    print("tokenization!!!!!!!!!!!!!!!!!!!")
+    #remove those are not alphabate
+    tokens1 = []
+    for token in tokens:
+        token2 = word_tokenize(token)
+        tokens1 += token2
+    print(tokens1)
+
+    tokens2 = [word1 for word1 in tokens1 if word1.isalpha()]
+    print("4:remove alphabate:")
+    print(tokens2)
+    #filter out the stopwords
     stop_words = set(stopwords.words('english'))
-    tokens = [word1 for word1 in tokens if word1 not in stop_words]
+    tokens = [word1 for word1 in tokens1 if word1 not in stop_words]
+    print("5:remove stopwors:")
+    print(tokens)
     #filter out the short words
     tokens = [w for w in tokens if len(w)>1]
+    print("6:remove shortwords:")
+    print(tokens)
+    #stemming words
+    stemmer =SnowballStemmer('english')
+    tokens = [stemmer.stem(t) for t in tokens]
+    print("7:stemmed words:")
+    print(tokens)
     return tokens
 
-
+#stemming the words and return a list of stemmed-tokens
+def do_stemming(tokens):
+    stemmed = []
+    for t in tokens:
+        stemmed.append(SnowballStemmer('english').stem(t))
+    return stemmed
 
 #load all docs in a directory
-def process_files(directory, vocab, is_trian):
+def process_files(directory, is_trian):
     for filename in listdir(directory):
        if not filename.endswith(".txt"):
            continue
        if not is_trian:
            break
        path = directory + '/' + filename
-       add_doc_to_vocab(path, vocab)
+       text = load_file(path)
+       convert_text_to_tokens(text)
+
+       #add_doc_to_vocab(path, vocab)
 
 #load doc and add to vocab
 def add_doc_to_vocab(filename,vocab):
     text = load_file(filename)
     tokens = convert_text_to_tokens(text)
     vocab.update(tokens)
-
 
 #save a list to a file
 def save_to_file(token,filename):
@@ -92,13 +134,10 @@ def shrink_vocab(vocab, k):
 #shrink_vocab(vocab,5)
 #save_to_file(vocab,"vocab.txt")
 
-neg_reviews = "/Users/xiaoyiwen/Desktop/datasets/train/neg1/3_4.txt"
-text = load_file(neg_reviews)
-print(text)
+filename = "/Users/xiaoyiwen/Desktop/datasets/train/neg1/7_3.txt"
+text = load_file(filename)
+convert_text_to_tokens(text)
 
-
-# tokens = convert_text_to_tokens(text)
-# print(tokens)
 
 
 
