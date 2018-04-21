@@ -1,6 +1,3 @@
-#convert to lowercase
-#Text has been split into one sentence per line.
-#There is white space around punctuation like periods, commas, and brackets.
 from os import listdir
 import string
 from nltk.corpus import stopwords
@@ -62,6 +59,8 @@ def split_tokens_to_token(tokens):
     for token in tokens:
         token2 = word_tokenize(token)
         tokens1 += token2
+    print("5:split the tokens to token list !!!!!!")
+    print(tokens1)
     print(len(tokens1))
 
     return tokens1
@@ -130,7 +129,6 @@ def load_file(filename):
     return text
 
 
-
 #3:load doc and add to vocab
 def add_doc_to_vocab(filename,vocab):
     text = load_file(filename)
@@ -170,8 +168,10 @@ def shrink_vocab(vocab, k):
 #save_to_file(vocab,"vocab.txt")
 
 neg_dir = "/Users/xiaoyiwen/Desktop/datasets/train/neg1"
-process_files(neg_dir,True)
+pos_dir = "/Users/xiaoyiwen/Desktop/datasets/train/pos1"
 
+#process_files(neg_dir,True)
+process_files(pos_dir,True)
 
 
 
