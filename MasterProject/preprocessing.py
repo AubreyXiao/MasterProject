@@ -2,7 +2,7 @@ from os import listdir
 import string
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
-from nltk.tokenize import word_tokenize
+from collections import Counter
 import re
 
 #clean the doc
@@ -20,25 +20,25 @@ def convert_text_to_tokens(text):
     #8:filter out the short words
     tokens = filt_out_shortwords(tokens)
     #9: do-stemming
-    tokens = do_stemming(tokens)
+    #tokens = do_stemming(tokens)
 
     return tokens
 
 #1:remove tags from the text
 def remov_tags_lowercase_to_list(text):
-    print(text)
+    #print(text)
     # 1:remove tags from the text
     text = re.sub("<.*?>", "\n", text)
-    print("1:remove the tags")
-    print(text)
+    #print("1:remove the tags")
+    #print(text)
     # 2:split the sentences into a list
     tokens = text.split("\n")
-    print("2:split the sentences into a list")
-    print(tokens)
+    #print("2:split the sentences into a list")
+    #print(tokens)
     # 3:lowercase
     tokens = [token.lower() for token in tokens]
-    print("3:lowercase")
-    print(tokens)
+    #print("3:lowercase")
+    #print(tokens)
 
     return tokens
 
@@ -46,8 +46,8 @@ def remov_tags_lowercase_to_list(text):
 def remov_punctuation(tokens):
     table = str.maketrans('', '', string.punctuation)
     tokens = [w.translate(table) for w in tokens if w != '']
-    print("4:remove punctuations")
-    print(tokens)
+    #print("4:remove punctuations")
+    #print(tokens)
 
     return tokens
 
@@ -57,11 +57,15 @@ def split_tokens_to_token(tokens):
     # 5:tokenize and remove those are not alphabate
     tokens1 = []
     for token in tokens:
-        token2 = word_tokenize(token)
+        #print(token)
+        #print("\n")
+        token2 = token.split()
         tokens1 += token2
-    print("5:split the tokens to token list !!!!!!")
-    print(tokens1)
-    print(len(tokens1))
+        # token2 = word_tokenize(token)
+        # tokens1 += token2
+    #print("5:split the tokens to token list !!!!!!")
+    #print(tokens1)
+    #print(len(tokens1))
 
     return tokens1
 
@@ -69,8 +73,8 @@ def split_tokens_to_token(tokens):
 #6:remove_nonalpa
 def remov_nonalpha(tokens):
     tokens = [word1 for word1 in tokens if word1.isalpha()]
-    print("5:remove alphabate:")
-    print(tokens)
+    #print("5:remove alphabate:")
+    #print(tokens)
 
     return tokens
 
@@ -78,18 +82,18 @@ def remov_nonalpha(tokens):
 def filt_out_stopwords(tokens):
     stop_words = set(stopwords.words('english'))
     tokens = [w for w in tokens if w not in stop_words]
-    print("6:remove stopwors:")
-    print(tokens)
-    print(len(tokens))
+    # #print("6:remove stopwors:")
+    # print(tokens)
+    # print(len(tokens))
 
     return tokens
 
 #8:filter out the shortwords
 def filt_out_shortwords(tokens):
     tokens = [w for w in tokens if len(w) > 1]
-    print("7:remove shortwords:")
-    print(tokens)
-    print(len(tokens))
+    # print("7:remove shortwords:")
+    # print(tokens)
+    # print(len(tokens))
 
     return tokens
 
@@ -99,16 +103,16 @@ def filt_out_shortwords(tokens):
 def do_stemming(tokens):
     stemmer = SnowballStemmer('english')
     tokens1 = [stemmer.stem(t) for t in tokens]
-    print("8:stemmed words:")
-    print(tokens1)
-    print(len(tokens1))
+    # print("8:stemmed words:")
+    # print(tokens1)
+    # print(len(tokens1))
     return tokens1
 
 
 #------------------------IO------------------------------------
 
 #1:load all docs in a directory
-def process_files(directory, is_trian):
+def process_files(directory, vocab, is_trian):
     for filename in listdir(directory):
        if not filename.endswith(".txt"):
            continue
@@ -117,9 +121,7 @@ def process_files(directory, is_trian):
        path = directory + '/' + filename
        text = load_file(path)
        convert_text_to_tokens(text)
-       print("---------------------------------------------------------------------------------------------------")
-
-       #add_doc_to_vocab(path, vocab)
+       add_doc_to_vocab(path, vocab)
 
 #2:load the file and return the text
 def load_file(filename):
@@ -138,7 +140,7 @@ def add_doc_to_vocab(filename,vocab):
 
 #save a list to a file
 def save_to_file(token,filename):
-    data = '/n'.join(token)
+    data = '\n'.join(token)
     file = open(filename,'w')
     file.write(data)
     file.close()
@@ -152,30 +154,31 @@ def shrink_vocab(vocab, k):
     return tokens
 
 
+
 #-------------------------main---------------------------------------------------
 
-#define a vocab
-#vocab = Counter()
+vocabluary  = Counter()
 
-#define the dir needs to be processed
-#pos_dir = "/Users/xiaoyiwen/Desktop/datasets/train/pos1"
+#directory (neg + pos)
+neg_dir = "/Users/xiaoyiwen/Desktop/datasets/train/neg"
+pos_dir = "/Users/xiaoyiwen/Desktop/datasets/train/pos"
 
-#update the vocab
-#process_files(neg_dir,vocab,True)
-#process_files(pos_dir,vocab,True)
-
-#shrink_vocab(vocab,5)
-#save_to_file(vocab,"vocab.txt")
-
-neg_dir = "/Users/xiaoyiwen/Desktop/datasets/train/neg1"
-pos_dir = "/Users/xiaoyiwen/Desktop/datasets/train/pos1"
-
-#process_files(neg_dir,True)
-process_files(pos_dir,True)
+#process_files
+process_files(neg_dir,vocabluary,True)
+process_files(pos_dir,vocabluary,True)
 
 
+print(len(vocabluary))
 
 
+#the words most common
+print(vocabluary.most_common(100))
+
+#shrink the vocab
+tokens = shrink_vocab(vocabluary,2)
+print(len(tokens))
+
+save_to_file(tokens,'review_vocab.txt')
 
 
 
