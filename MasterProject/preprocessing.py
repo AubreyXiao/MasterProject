@@ -153,34 +153,5 @@ def shrink_vocab(vocab, k):
     print(vocab.most_common(50))
     return tokens
 
-
-
 #-------------------------main---------------------------------------------------
-
-vocabluary  = Counter()
-
-#directory (neg + pos)
-neg_dir = "/Users/xiaoyiwen/Desktop/datasets/train/neg"
-pos_dir = "/Users/xiaoyiwen/Desktop/datasets/train/pos"
-
-#process_files
-process_files(neg_dir,vocabluary,True)
-process_files(pos_dir,vocabluary,True)
-
-
-print(len(vocabluary))
-
-
-#the words most common
-print(vocabluary.most_common(100))
-
-#shrink the vocab
-tokens = shrink_vocab(vocabluary,2)
-print(len(tokens))
-
-save_to_file(tokens,'review_vocab.txt')
-
-
-
-
 
