@@ -2,6 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e162338-634b-45bf-a1d3-d7a61659c54a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MasterProject/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MasterProject/test1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MasterProject/test2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MasterProject/train_docs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MasterProject/vocabluary.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test_Embedding/Test1.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test_Embedding/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test_Embedding/pretrained_words_embedding.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test_Embedding/test2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/integrate_files.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/LoadText.py" afterPath="$PROJECT_DIR$/textming_Demo/LoadText.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/integrate_files.py" afterPath="$PROJECT_DIR$/MasterProject/data_Preprocessing/integrate_files.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/preprocessing.py" afterPath="$PROJECT_DIR$/MasterProject/data_Preprocessing/preprocessing.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/review_vocab.txt" afterPath="$PROJECT_DIR$/MasterProject/review_vocabs/review_vocab.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/stemm_vocab.txt" afterPath="$PROJECT_DIR$/MasterProject/review_vocabs/stemm_vocab.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/training_Data.py" afterPath="$PROJECT_DIR$/MasterProject/traning_models/training_Data.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/vocab_min_10.txt" afterPath="$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/vocab_min_2.txt" afterPath="$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/vocab_min_5.txt" afterPath="$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/MasterProject/vocab_min_8.txt" afterPath="$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/negative_reviews.txt" afterPath="$PROJECT_DIR$/textming_Demo/negative_reviews.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/positive_reviews.txt" afterPath="$PROJECT_DIR$/textming_Demo/positive_reviews.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/textming_Demo/test1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vocab.txt" afterPath="$PROJECT_DIR$/textming_Demo/vocab.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +40,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoadText.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LoadText.py">
+      <file leaf-file-name="LoadText.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/textming_Demo/LoadText.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vocab_min_5.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_5.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vocab_min_8.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_8.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vocab_min_10.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_10.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="training_Data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MasterProject/traning_models/training_Data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="negative_reviews.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/textming_Demo/negative_reviews.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="613">
+              <caret line="999" column="42" lean-forward="false" selection-start-line="999" selection-start-column="42" selection-end-line="999" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/textming_Demo/test1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="positive_reviews.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/textming_Demo/positive_reviews.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="998" column="0" lean-forward="false" selection-start-line="998" selection-start-column="0" selection-end-line="999" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vocab.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/textming_Demo/vocab.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="1697" column="9" lean-forward="true" selection-start-line="1696" selection-start-column="8" selection-end-line="1697" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="integrate_files.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MasterProject/data_Preprocessing/integrate_files.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -56,10 +172,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="84" />
+    <option name="x" value="230" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="829" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -81,8 +197,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="MasterDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MasterDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="MasterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MasterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="MasterProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MasterProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MasterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="MasterProject" type="462c0819:PsiDirectoryNode" />
+              <item name="data_Preprocessing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -95,6 +222,15 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/textming_Demo" />
+      <recent name="$PROJECT_DIR$/MasterProject/traning_models" />
+      <recent name="$PROJECT_DIR$/MasterProject/review_vocabs" />
+      <recent name="$PROJECT_DIR$/MasterProject/data_Preprocessing" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -122,7 +258,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MasterDemo" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LoadText.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/textming_Demo/LoadText.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,13 +283,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="84" y="23" width="1440" height="829" extended-state="0" />
+    <frame x="230" y="23" width="1440" height="823" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18819444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48877147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48877147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -202,7 +339,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LoadText.py">
+    <entry file="file://$PROJECT_DIR$/textming_Demo/LoadText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textming_Demo/LoadText.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="11" />
@@ -212,7 +359,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoadText.py">
+    <entry file="file://$PROJECT_DIR$/textming_Demo/LoadText.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -222,7 +369,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoadText.py">
+    <entry file="file://$PROJECT_DIR$/textming_Demo/LoadText.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -232,7 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test1.py" />
     <entry file="uml://Python/#/Users/xiaoyiwen/MasterDemo/LoadText.py">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -248,31 +394,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vocab.txt">
+    <entry file="file://$PROJECT_DIR$/MasterProject/data_Preprocessing/preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="1695" column="10" lean-forward="true" selection-start-line="1695" selection-start-column="10" selection-end-line="1695" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/positive_reviews.txt">
+    <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/review_vocab.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="998" column="0" lean-forward="false" selection-start-line="998" selection-start-column="0" selection-end-line="999" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/negative_reviews.txt">
+    <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/stemm_vocab.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/vocab_min_10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/review_vocabs/vocabluary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/test1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/train_docs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integrate_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/traning_models/training_Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Embedding/pretrained_words_embedding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Embedding/Test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Embedding/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Embedding/test2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textming_Demo/LoadText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textming_Demo/negative_reviews.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="613">
           <caret line="999" column="42" lean-forward="false" selection-start-line="999" selection-start-column="42" selection-end-line="999" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoadText.py">
+    <entry file="file://$PROJECT_DIR$/textming_Demo/positive_reviews.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+        <state relative-caret-position="598">
+          <caret line="998" column="0" lean-forward="false" selection-start-line="998" selection-start-column="0" selection-end-line="999" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textming_Demo/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textming_Demo/vocab.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="1697" column="9" lean-forward="true" selection-start-line="1696" selection-start-column="8" selection-end-line="1697" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MasterProject/data_Preprocessing/integrate_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
